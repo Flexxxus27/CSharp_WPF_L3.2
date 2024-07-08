@@ -27,7 +27,7 @@
                 <TextBox AcceptsTab="True" AcceptsReturn="True" MaxLines="10" MinLines="10" x:Name="descriptionToDo"></TextBox>
             </StackPanel>
         </GroupBox>
-
+        
         <Button Click="AddJob" MaxWidth="150" Margin="12" Padding="12" Background="#5EBEC4" Grid.Row="2" Name="buttonAdd" ToolTip="При добавлении дело появится в списке слева,и его придется выполнить">
             Добавить дело
         </Button>

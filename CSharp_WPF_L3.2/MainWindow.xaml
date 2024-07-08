@@ -8,7 +8,12 @@
         Icon="image\icon.png"
         Background="#FFFDFAF1"
         Title="Список дел" Height="450" Width="400">
-    
+    <Window.Resources>
+        <Style x:Key="DataGridStyle" TargetType="DataGrid">
+            
+        </Style>
+    </Window.Resources>
+
     <Grid Background="#FFFDFAF1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -42,7 +47,7 @@
                   AutoGenerateColumns="False"
                   GridLinesVisibility="Horizontal" ></DataGrid>
 
-        <DataGrid>
+        <DataGrid Margin="0,0,0,325" Grid.RowSpan="2">
             <DataGrid.Columns>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
@@ -69,7 +74,7 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        
-        
+
+
     </Grid>
 </Window>
